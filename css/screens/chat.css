@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 1000vh;
+  height: 500vh;
 }
 #chat-screen .alt-header {
   position: fixed;
@@ -17,8 +17,9 @@
 .alt-header__column .fa-bars {
   margin-left: 20px;
 }
+
 .main-chat {
-  margin-top: 120px;
+  margin-top: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,6 +87,7 @@
   padding: 5px 25px;
   align-items: center;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 .reply .reply__column:first-child {
   width: 10%;
@@ -98,10 +100,12 @@
   opacity: 0.5;
 }
 .reply input {
-  padding: 12px;
+  padding: 14px;
   width: 100%;
   border: var(--main-border);
-  border-radius: 20px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 .reply__column {
   padding-right: 20px;
@@ -109,12 +113,12 @@
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: -3px;
-  top: 5px;
+  right: 28px;
+  top: 8px;
 }
 .reply__column:last-child > i {
-  right: 40px;
-  top: 12px;
+  right: 65px;
+  top: 14px;
 }
 .reply__column button {
   background-color: var(--yellow);
@@ -129,4 +133,56 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+@keyframes fadeInRow {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes fadeInRowOwn {
+  from {
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message-other {
+  animation: fadeInRow 1s linear forwards;
+}
+.message-mine {
+  animation: fadeInRowOwn 1s linear forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.message-other2 {
+  animation: fadeInRow 1s linear forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-grin-squint,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-grin-squint,
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply:focus-within input {
+  width: 98vw;
+  transform: translateX(-10%) translateY(-80px);
+}
+.reply:focus-within {
+  transform: translateY(80px);
 }
