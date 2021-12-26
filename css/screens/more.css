@@ -25,7 +25,7 @@
 .more-suggestions__icon-image {
   width: 60px;
   height: 60px;
-  background-color: var(--yellow);
+  background-color: #a3abf1;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -35,4 +35,16 @@
 .more-suggestions__icon-image i {
   font-size: 36px;
   color: white;
+}
+.cog-notification {
+  position: relative;
+}
+.cog-notification__child {
+  height: 5px;
+  width: 5px;
+  background-color: tomato;
+  border-radius: 50%;
+  position: absolute;
+  left: 18px;
+  top: -3px;
 }

@@ -8,7 +8,7 @@
     <title>More - Kokoa Clone</title>
 </head>
 <body>
-    <div class="status-bar" id="status-bar">
+    <div class="status-bar status-bar-stuck" id="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
             <i class="fas fa-wifi"></i>
@@ -23,21 +23,21 @@
         </div>
     </div>
 
-    <header class="screen__header">
+    <header class="screen__header screen__header-stuck">
         <h1 class="screen-header__title">More</h1>
         <div class="screen-header__icons">
             <span><i class="fas fa-search fa-lg"></i></span>
             <span><i class="fas fa-music fa-lg"></i></span>
-            <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
+            <span class="cog-notification"><a href="settings.html"><i class="fas fa-cog fa-lg"><div class="cog-notification__child"></div></i></a></span>
         </div>
     </header>
 
-    <main class="main-screen more-screen">
+    <main class="main-screen more-screen main-screen__margin">
         <div class="user-component">
             <div class="user-component__column">
-                <img src="img/doge 복사본.jpeg" class="user-component__avartar user-component__avartar--xl"/>
+                <img src="img/investor.jpeg" class="user-component__avartar user-component__avartar--xl"/>
                 <div class="user-component__text">
-                    <h4 class="user-component__title">Doge</h4>
+                    <h4 class="user-component__title">Investor</h4>
                     <h6 class="user-component__subtitle">+82 10-1234-1234<i class="fas fa-exclamation-circle"></i></h6>
                 </div>
             </div>
@@ -62,14 +62,21 @@
                 <div class="more-suggestions__icon-image">
                     <i class="fas fa-quote-right"></i>
                 </div>
-                <span class="more-suggestions__icon-text">Kokoa Story</span>
+                <span class="more-suggestions__icon-text">Story</span>
             </div>
             <div class="more-suggestions__icon">
                 <div class="more-suggestions__icon-image">
-                    <i class="fas fa-quote-right"></i>
+                    <i class="fas fa-chart-line"></i>
                 </div>
-                <span class="more-suggestions__icon-text">Kokoa Story</span>
+                <span class="more-suggestions__icon-text">Chart</span>
             </div>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">Bank</span>
+                </div>
         </div>
        
     </main>

@@ -2,7 +2,7 @@
   text-align: center;
   display: block;
   width: 100%;
-  background-color: #fafafa;
+  background-color: #a3abf1;
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 10px;
@@ -37,10 +37,11 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: #cdd1f6;
   position: absolute;
-  height: 100vh;
+  height: 125vh;
   width: 100vw;
+  z-index: 3;
   top: 0;
   display: flex;
   justify-content: center;

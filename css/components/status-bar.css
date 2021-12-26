@@ -27,3 +27,7 @@
 .status-bar__column:first-child span {
   margin-right: 5px;
 }
+.status-bar-stuck {
+  background-color: var(--yellow);
+  z-index: 2;
+}

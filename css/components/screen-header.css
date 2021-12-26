@@ -25,3 +25,11 @@
 .screen-header__icons .fa-cog:hover {
   animation: rotateCog 2s linear infinite;
 }
+.screen__header-stuck {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 10px;
+  background-color: var(--yellow);
+  z-index: 1;
+}
