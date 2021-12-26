@@ -1,3 +1,3 @@
 # Kokoa Clone 2021
 
-HTML & CSS are so much fun!
+This is my first html & css Clone!
