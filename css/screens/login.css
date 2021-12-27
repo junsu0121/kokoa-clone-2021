@@ -50,3 +50,6 @@
   color: inherit;
   font-size: 13px;
 }
+.index-body {
+  height: 100vh;
+}
